@@ -707,7 +707,6 @@
          <div class="row">
 
             <div class="eight columns">
-
                <form accept-charset="UTF-8" action="https://usebasin.com/f/d5d5c3b7412f" method="POST" id="contactForm" name="submit" class="form-horizontal">
                   <div class=" control-group">
                      <label class="control-label">Name <span class="required">*</span></label>
@@ -730,7 +729,7 @@
                   <div class=" control-group">
                      <div class="form-group floating-label-form-group controls">
                            <label>Message <span class="required">*</span></label>
-                           <textarea style="resize:none" rows="5" class="form-control" id="contactMessage" name="contactMessage" required="" data-validation-required-message="Please enter a message." placeholder="What&#39;s on your mind? "></textarea>
+                           <textarea style="resize:none" rows="5" class="form-control" id="contactMessage" name="contactMessage" required="" data-validation-required-message="Please enter a message." placeholder="What&#39;s on your mind? Chances are, I&#39;ll get back to you soon after I receive this message. Make it interesting, or keep it all business. Makes no difference to me. I treat all messages as equals...unless you&#39;re SPAM. If you&#39;re SPAM...please, don&#39;t E-mail me!"></textarea>
                            <p class="help-block text-danger"></p>
                      </div>
                   </div>
@@ -740,6 +739,15 @@
                         <button class="submit">Submit</button>
                   </div>
                </form>
+
+               <!-- contact-warning -->
+               <div id="message-warning"> Error boy</div>
+               <!-- contact-success -->
+				   <div id="message-success">
+                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+				   </div>
+
+            </div>
 
                <!-- contact-warning -->
                <div id="message-warning"> Error boy</div>
@@ -818,13 +826,19 @@
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.min.js.download"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js.download"></script>
 
    <script src="js/jquery.flexslider.js"></script>
    <script src="js/waypoints.js"></script>
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
-   
+   <script src="js/jqBootstrapValidation.js.download"></script>
+   <script>
+     $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
+   </script>
 
 </body>
 
