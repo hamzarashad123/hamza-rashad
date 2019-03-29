@@ -25,7 +25,90 @@
 
    <!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="faviconn.ico" >
+   <link rel="shortcut icon" href="faviconn.ico" >
+   <!--Slider Show
+   ==================================================== -->
+     
+   <style type="text/css">  
+      body {  
+          margin: 0;  
+          background: #e6e6e6;  
+      }  
+      .showSlide {  
+          display: none  
+      }  
+          .showSlide img {  
+              width: 100%;  
+          }
+
+          .showSlide1 {  
+          display: none  
+      }  
+          .showSlide1 img {  
+              width: 100%;  
+          }  
+      .slidercontainer {  
+          max-width: 1000px;  
+          position: relative;  
+          margin: auto;  
+      }  
+      .left, .right {  
+          cursor: pointer;  
+          position: absolute;  
+          top: 50%;  
+          width: auto;  
+          padding: 16px;  
+          margin-top: -22px;  
+          color: white;  
+          font-weight: bold;  
+          font-size: 18px;  
+          transition: 0.6s ease;  
+          border-radius: 0 3px 3px 0;  
+      }  
+      .right {  
+          right: 0;  
+          border-radius: 3px 0 0 3px;  
+      }  
+          .left:hover, .right:hover {  
+              background-color: rgba(115, 115, 115, 0.8);  
+          }  
+      .content {  
+          color: #eff5d4;  
+          font-size: 30px;  
+          padding: 8px 12px;  
+          position: absolute;  
+          top: 10px;  
+          width: 100%;  
+          text-align: center;  
+      }  
+      .active {  
+          background-color: #717171;  
+      }  
+      /* Fading animation */  
+      .fade {  
+          -webkit-animation-name: fade;  
+          -webkit-animation-duration: 1.5s;  
+          animation-name: fade;  
+          animation-duration: 1.5s;  
+      }  
+      @-webkit-keyframes fade {  
+          from {  
+              opacity: .4  
+          }  
+          to {  
+              opacity: 1  
+          }  
+      }  
+
+      @keyframes fade {  
+          from {  
+              opacity: .4  
+          }  
+          to {  
+              opacity: 1  
+          }  
+      }  
+  </style>
 
 </head>
 
@@ -301,10 +384,7 @@
       </div> <!-- End skills -->
 
    </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
+   <!--main portfolio Section ======================-->
    <section id="portfolio">
 
       <div class="row">
@@ -329,9 +409,46 @@
                         </div>
                         <div class="link-icon"><i class="icon-plus"></i></div>
                      </a>
-
+                     <h6>Android Based Virtual Reality</h6>
+                     <p>Game Development</p>
                   </div>
           		</div> <!-- item end -->
+
+                        <div class="columns portfolio-item">
+                           <div class="item-wrap">
+         
+                              <a href="#modal-08" title="">
+                                 <img alt="" src="images/portfolio/hci.jpg">
+                                 <div class="overlay">
+                                    <div class="portfolio-item-meta">
+                                        <h5>Moonstroity Custom Shirts</h5>
+                                       <p>Human Computer Interaction</p>
+                                     </div>
+                                 </div>
+                                 <div class="link-icon"><i class="icon-plus"></i></div>
+                              </a>
+                              <h6>Moonstroity Custom Shirts</h6>
+                              <p>Human Computer Interaction </p>
+                           </div>
+                        </div> <!-- item end -->
+            </div> <!-- portfolio-wrapper end -->
+
+         </div> <!-- twelve columns end -->
+
+   <!-- Portfolio Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <!-- <h1>Check Out Some of My Works.</h1> -->
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+          	   
 
                <div class="columns portfolio-item">
                   <div class="item-wrap">
@@ -437,22 +554,7 @@
                            </div>
                         </div> <!-- item end -->
 
-                        <div class="columns portfolio-item">
-                           <div class="item-wrap">
-         
-                              <a href="#modal-08" title="">
-                                 <img alt="" src="images/portfolio/hci.jpg">
-                                 <div class="overlay">
-                                    <div class="portfolio-item-meta">
-                                        <h5>Moonstroity Custom Shirts</h5>
-                                       <p>Human Computer Interaction</p>
-                                     </div>
-                                 </div>
-                                 <div class="link-icon"><i class="icon-plus"></i></div>
-                              </a>
-         
-                           </div>
-                        </div> <!-- item end -->
+                       
             </div> <!-- portfolio-wrapper end -->
 
          </div> <!-- twelve columns end -->
@@ -463,13 +565,58 @@
 
          <div id="modal-01" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-fyp.jpg" alt="" />
+            <!-- <img class="scale-with-grid" src="images/portfolio/modals/m-fyp.jpg" alt="" /> -->
+            <div class="slidercontainer">  
+               
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp.jpg" alt="">
+               </div>  
+
+               <div class="showSlide fade">  
+                     <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-main.jpg" alt="">
+                  </div>  
+
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-1.jpg" alt="">
+               </div>  
+         
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-2.jpg" alt="">                    
+               </div>  
+
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-3.jpg" alt="">                    
+               </div>  
+
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-4.jpg" alt="">                    
+               </div>  
+
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-5.jpg" alt="">                    
+               </div>  
+
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-6.jpg" alt="">                    
+               </div>
+               
+               <div class="showSlide fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-fyp-7.jpg" alt="">                    
+               </div>
+               
+               <!-- Navigation arrows -->  
+               <a class="left" onclick="nextSlide(-1)">❮</a>  
+               <a class="right" onclick="nextSlide(1)">❯</a>  
+           </div> 
+            
+
 
 		      <div class="description-box">
 			      <h4>Android Based Virtual Reality</h4>
 			      <ul>
-                  <li>It is a bike riding game, in which the environment is according to our socio religious culture. Features of the game are coin collection.</li>
-                  <li>The environment of the game is based on realistic roads and streets of Rawalpindi.</li>
+                  <li>Android based 3D virtual reality Bike Riding game. In that game the scenes and views are designed in such a way that they will resemble our socio and religious plus actual environment of Rawalpindi so that the attention of player will be gained. Above that, feature of virtual reality has also became a factor of interest for the game players as this game will be played by wearing 3D VR headset”.
+                  <li>To make a virtual reality game with realistic environment.</li>                  
+                  <li>To promote our socio religious culture.</li>
                </ul>
                <span class="categories"><i class="fa fa-tag"></i>Unity 3D</span>
 		      </div>
@@ -483,8 +630,8 @@
 
          <div id="modal-02" class="popup-modal mfp-hide">
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-antivirus.jpg" alt="" />
-
+            <img class="scale-with-grid" src="images/portfolio/modals/m-antivirus.jpg" alt="" />
+         
 		      <div class="description-box">
 			      <h4>Kaspersky End Point Security</h4>
                <ul>
@@ -597,13 +744,43 @@
          </div><!-- modal-07 End -->
 
          <div id="modal-08" class="popup-modal mfp-hide">
+            
+             <div class="slidercontainer">  
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci.jpg" alt="" />
+               </div>  
 
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-hci.jpg" alt="" />
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci-1.jpg" alt="" />
+                  </div>  
+
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci-2.jpg" alt="" />
+               </div>  
+         
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci-3.jpg" alt="" />                   
+               </div>  
+
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci-4.jpg" alt="" />                  
+               </div>  
+
+               <div class="showSlide1 fade">  
+                  <img class="scale-with-grid" src="images/portfolio/modals/m-hci-5.jpg" alt="" />                   
+               </div>  
+
+               
+               <!-- Navigation arrows -->  
+               <a class="left" onclick="nextSlide_1(-1)">❮</a>  
+               <a class="right" onclick="nextSlide_1(1)">❯</a>  
+           </div> 
 
 		      <div class="description-box">
 			      <h4>Moonstrosity Custom Shirts</h4>
                <ul>
-                  <li>An interactive application designed to buy custom clothing online. Main objective is design an interactive and user friendly GUI and deployed on smart device (tablet, mobile phone, Laptop, watch, TV – at least 3 of them)</li>
+                  <li>An interactive application designed to buy custom clothing online. Main objective is design an interactive and user friendly GUI and deployed on smart device (tablet, mobile phone, Laptop, watch, TV – at least 3 of them).</li>
+
                </ul>
                <span class="categories"><i class="fa fa-tag"></i>HCI</span>
 		      </div>
@@ -828,6 +1005,51 @@
    <script>
      $(function () { $("input,select,textarea").not("[type=submit]").jqBootstrapValidation(); } );
    </script>
+
+<script type="text/javascript">  
+   var slide_index = 1;
+   var slide_index_1 = 1;
+
+   displaySlides(slide_index);
+   displaySlides_1(slide_index_1);  
+
+   function nextSlide(n) {  
+       displaySlides(slide_index += n);  
+   }  
+   function nextSlide_1(n) {  
+       displaySlides_1(slide_index_1 += n);  
+   } 
+   function currentSlide(n) {  
+       displaySlides(slide_index = n);  
+   }  
+   function currentSlide_1(n) {  
+       displaySlides_1(slide_index_1 = n);  
+   }  
+
+   function displaySlides(n) {  
+       var i;  
+       var slides = document.getElementsByClassName("showSlide");  
+       if (n > slides.length) { slide_index = 1 }  
+       if (n < 1) { slide_index = slides.length }  
+       for (i = 0; i < slides.length; i++) {  
+           slides[i].style.display = "none";  
+       }  
+       slides[slide_index - 1].style.display = "block";  
+   }
+   function displaySlides_1(n) {  
+       var i;  
+       var slides = document.getElementsByClassName("showSlide1");  
+       if (n > slides.length) { slide_index_1 = 1 }  
+       if (n < 1) { slide_index_1 = slides.length }  
+       for (i = 0; i < slides.length; i++) {  
+           slides[i].style.display = "none";  
+       }  
+       slides[slide_index_1 - 1].style.display = "block";  
+   }
+    
+</script> 
+
+
 
 </body>
 
